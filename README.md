@@ -1,1 +1,0 @@
-# collections-full-stack
