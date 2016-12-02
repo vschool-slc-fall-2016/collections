@@ -1,0 +1,15 @@
+@font-face {
+    font-family: lighthouse;
+    src: url(fonts/stainy/stainy.ttf);
+}
+
+.navbar-brand {
+    font-family: lighthouse;
+    background-color: black;
+    font-size: 35px;
+}
+.navbar {
+    font-family: lighthouse;
+    background-color: black;
+    font-size: 35px;
+}
