@@ -8,8 +8,14 @@
     background-color: black;
     font-size: 35px;
 }
+
 .navbar {
+    position: relative;
     font-family: lighthouse;
     background-color: black;
     font-size: 35px;
+}
+
+.headerImg {
+    position: fixed;
 }
