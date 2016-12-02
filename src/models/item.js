@@ -11,7 +11,8 @@ var itemSchema = new mongoose.Schema({
     itemName: String,
     itemValue: String,
     itemCondition: String,
-    itemLocation: String
+    itemLocation: String,
+    itemImageUrl: String
 });
 
 module.exports= mongoose.model('Item', itemSchema);
