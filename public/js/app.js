@@ -8,6 +8,6 @@ app.controller("mainCtrl", ["$scope", "$http", function ($scope, $http) {
                     $scope.hello = response.data
                     console.log(data)
                 })
-        }
+        };
         //    $scope.getHello();
 }]);
