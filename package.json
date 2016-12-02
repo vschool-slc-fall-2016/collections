@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/justinblake/collections-full-stack.git"
+    "url": "git+https://github.com/vschool-slc-fall-2016/collections.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/justinblake/collections-full-stack/issues"
+    "url": "https://github.com/vschool-slc-fall-2016/collections/issues"
   },
-  "homepage": "https://github.com/justinblake/collections-full-stack#readme",
+  "homepage": "https://github.com/vschool-slc-fall-2016/collections#readme",
   "dependencies": {
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
@@ -25,5 +25,6 @@
     "jsonwebtoken": "^7.1.9",
     "mongoose": "^4.7.1",
     "morgan": "^1.7.0"
-  }
+  },
+  "devDependencies": {}
 }
