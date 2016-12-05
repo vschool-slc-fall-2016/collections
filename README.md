@@ -1,4 +1,3 @@
-i
 # collections-full-stack
 
 First project to make a full stack MEAN application as a team.
