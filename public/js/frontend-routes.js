@@ -6,6 +6,14 @@ app.config(["$routeProvider", function ($routeProvider) {
             templateUrl: "components/home/home.html",
             controller: "mainCtrl"
         })
+        .when('/new-item', {
+            templateUrl: "components/new-item/new-item.html",
+            controller: "newItemCtrl"
+        })
+        .when('/mycollection', {
+            templateUrl: 'components/my-collection/collection.html',
+            controller: 'collectionCtrl'
+        })
         .otherwise({
             redirectTo: "/home"
         })
