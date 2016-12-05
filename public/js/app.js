@@ -1,8 +1,8 @@
 var app = angular.module("App", ["ngRoute", 'Auth']);
 
-app.controller("mainCtrl", ["$scope", "$http", function ($scope, $http) {
+app.controller("mainCtrl", ["$scope", "HttpService", function ($scope, HttpService) {
 
-    $scope.getHello = function () {
+    $scope.getCollection = function () {
         $http.get("/auth")
             .then(function (response) {
                 $scope.hello = response.data;
