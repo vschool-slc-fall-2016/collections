@@ -12,7 +12,7 @@ app.config(["$routeProvider", function ($routeProvider) {
         })
         .when('/signup', {
             templateUrl: '/components/auth/register/register.html',
-            controller: 'RegisterCtrl'
+            controller: 'SignupController'
         })
 }]);
 
