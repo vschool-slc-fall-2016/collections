@@ -6,7 +6,7 @@ app.controller("SignupController", ["$scope", "$location", "UserService", functi
 
     $scope.signup = function (user) {
 
-        
+
             UserService.signup(user).then(function (response) {
                 $location.path("/login");
 
