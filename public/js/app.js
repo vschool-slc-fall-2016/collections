@@ -5,8 +5,8 @@ app.controller("mainCtrl", ["$scope", "HttpService", function ($scope, HttpServi
     $scope.getCollection = function () {
         $http.get("/auth")
             .then(function (response) {
-                $scope.hello = response.data;
-                console.log($scope.hello)
+                console.log(response.data);
+                return response.data;
             })
     };
     //post new info, done wrong?
