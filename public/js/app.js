@@ -9,5 +9,29 @@ app.controller("mainCtrl", ["$scope", "$http", function ($scope, $http) {
                 console.log($scope.hello)
             })
     };
-    //    $scope.getHello();
+    //post new info, done wrong?
+    this.addCollection = function(newCollection) {
+        return $http.post("/auth", newCollection)
+            .then(function(response) {
+                console.log("response ", response);
+                return response.data;
+            });
+    }
+    //update collection
+    this.updateCollection = function(collectionId) {
+        return $http.put("/auth/" + collectionId)
+            .then(function (response) {
+                console.log("response ", response);
+                return response.data;
+            })
+    }
+    //delete collection
+    this.deleteCollection = function(collectionId) {
+        return $http.delete("/auth/" + collectionId)
+            .then(function (response) {
+                return response.data;
+            });
+    }
+    
+    
 }]);
