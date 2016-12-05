@@ -1,6 +1,6 @@
 var app = angular.module("App");
 
-app.controller("newItemCtrl", ["$scope", "HttpService", function($scope, HttpService) {
+app.controller("collectionCtrl", ["$scope", "HttpService", function($scope, HttpService) {
 
     //get item
     $scope.getItem = function(gotItem) {
