@@ -4,11 +4,11 @@ app.config(["$routeProvider", function ($routeProvider) {
     $routeProvider
         .when('/login', {
             templateUrl: '/components/auth/login/login.html',
-            controller: 'LoginCtrl'
+            controller: 'LoginController'
         })
         .when('/logout', {
             template: '',
-            controller: 'LogoutCtrl'
+            controller: 'LogoutController'
         })
         .when('/signup', {
             templateUrl: '/components/auth/register/register.html',
