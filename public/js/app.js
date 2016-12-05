@@ -1,4 +1,4 @@
-var app = angular.module("App", ["ngRoute"]);
+var app = angular.module("App", ["ngRoute", 'Auth']);
 
 app.controller("mainCtrl", ["$scope", "$http", function ($scope, $http) {
 
