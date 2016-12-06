@@ -22,3 +22,7 @@
     font-weight: bold;
     font-size: 20px;
 }
+
+.center-block {
+    margin-bottom: 100px !important;
+}
