@@ -57,14 +57,14 @@ app.service('HttpService', ['$http', function($http) {
             })
     };
 
-    // this will be used if we decide to share all collections on one page
+    // get to show all collections across all users
 
-    // this.getAllItems = function () {
-    //     return $http.get('/shared')
-    //         .then( function(response) {
-    //             return response.data;
-    //         })
-    // }
+    this.getAllItems = function () {
+        return $http.get('/shared')
+            .then( function(response) {
+                return response.data;
+            })
+    }
 
 
 }]);
