@@ -1,8 +1,13 @@
 <div class="row myCollections">
     <span ng-repeat="item in myItems" class="col-xs-4">
+        <form>
             <each-item item="items"></each-item>
-            <h2> <img src="{{ item.itemImageUrl }}" alt="..." class="img1 img-circle">
-                <br> {{ item.itemName }} {{ item.itemValue }} {{ item.itemCondition}} {{ item.itemCollection }}
-            </h2>
+             <img src="{{ item.itemImageUrl }}" alt="..." class="img1 img-circle">
+                <br>
+                <h1>{{ item.itemName }}</h1>
+                 <h3>{{ item.itemValue }} </h3>
+                  <h3>{{ item.itemCondition}} </h3>
+                  <h3>{{ item.itemCollection }} </h3>
+        </form>
         </span>
 </div>
