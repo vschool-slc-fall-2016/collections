@@ -14,6 +14,10 @@ app.config(["$routeProvider", function ($routeProvider) {
             templateUrl: 'components/my-collection/collection.html',
             controller: 'collectionCtrl'
         })
+        .when('/browse', {
+            templateUrl: 'components/browse/browse.html',
+            controller: 'browseCtrl'
+        })
         .otherwise({
             redirectTo: "/home"
         })
