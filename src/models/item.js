@@ -11,7 +11,7 @@ var itemSchema = new mongoose.Schema({
     itemName: String,
     itemValue: String,
     itemCondition: String,
-    itemLocation: String,
+    itemCollection: String,
     itemImageUrl: String
 });
 
