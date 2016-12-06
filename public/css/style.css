@@ -80,3 +80,17 @@ body {
     right: 0px;
     margin-bottom: 0px;
 }
+
+.img1 {
+    display: inline;
+    height: 300px;
+    width: 300px;
+}
+
+myCollections {
+    display: inline;
+}
+
+body {
+    display: inline;
+}
