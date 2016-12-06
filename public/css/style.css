@@ -69,11 +69,8 @@ h1 {
 
 .collections {
     text-align: center;
-    font-size: 21px;
-    letter-spacing: .1em;
-    font-family: square;
-    font-weight: bold;
-    margin: 18px auto;
+    font-size: 50px;
+    font-family: lighthouse;
 }
 
 .aboutCollections {
@@ -85,4 +82,8 @@ h1 {
 #p1 {
     background-color: black;
     width: 100%;
+}
+
+footer {
+    font-family: lighthouse;
 }
