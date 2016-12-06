@@ -20,7 +20,7 @@ app.use('/api', expressJwt({secret: config.secret}));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/api/item', require('./src/routes/item-routes'));
 app.use('/api/owner', require('./src/routes/owner-routes'));
-// app.use('/shared', require('./src/routes/shared-routes'));
+app.use('/shared', require('./src/routes/shared-routes'));
 
 app.use('/auth', require('./src/routes/auth-routes'));
 
