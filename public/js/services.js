@@ -19,7 +19,7 @@ app.service('HttpService', ['$http', function($http) {
             })
     };
 
-    // collection requests
+    // items requests
 
     this.getItems = function () {
         return $http.get('/api/item/')
