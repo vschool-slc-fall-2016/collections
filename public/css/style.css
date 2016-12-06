@@ -80,3 +80,23 @@ body {
     right: 0px;
     margin-bottom: 0px;
 }
+
+.img1 {
+    display: inline;
+    height: 300px;
+    width: 300px;
+}
+
+myCollections {
+    display: inline;
+    margin-left: 10px;
+}
+
+body {
+    display: inline;
+}
+
+form {
+    background-color: grey: opacity: .7;
+    text-align: center;
+}

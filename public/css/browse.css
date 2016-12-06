@@ -1,0 +1,19 @@
+.my-img {
+    height: auto;
+    width: auto;
+    max-height: 200px;
+    max-width: 200px;
+}
+
+.my-fig {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.fig-margin {
+    margin-bottom: 40px;
+}
+
+.first-fig {
+    margin-top: 15px;
+}
