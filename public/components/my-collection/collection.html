@@ -15,17 +15,17 @@
             <form  class="form-horizontal" ng-if="showEditableFields">
                 <div class="form-group first-edit">
                     <label for="editName">Name: </label>
-                    <input class="form-control name-margin" id="editName" placeholder="{{item.itemName}}"
+                    <input class="form-control form-fix name-margin" id="editName" placeholder="{{item.itemName}}"
                            ng-model="myItems[$index].itemName">
                 </div>
                 <div class="form-group">
                     <label for="editValue">Value: </label>
-                    <input class="form-control value-margin" id="editValue" placeholder="{{item.itemValue}}"
+                    <input class="form-control form-fix value-margin" id="editValue" placeholder="{{item.itemValue}}"
                            ng-model="myItems[$index].itemValue">
                 </div>
                 <div class="form-group">
                     <label for="editCondition">Condition: </label>
-                    <input class="form-control" id="editCondition" placeholder="{{item.itemCondition}}"
+                    <input class="form-control form-fix" id="editCondition" placeholder="{{item.itemCondition}}"
                            ng-model="myItems[$index].itemCondition">
                 </div>
             </form>
