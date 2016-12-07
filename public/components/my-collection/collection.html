@@ -7,7 +7,7 @@
 
             <div ng-if="!showEditableFields">
                 <figcaption class="my-coll first-fig">Name: {{ item.itemName }}</figcaption>
-                <figcaption class="my-coll">Value: {{ item.itemValue }}</figcaption>
+                <figcaption class="my-coll">Value: {{ item.itemValue | currency}}</figcaption>
                 <figcaption class="my-coll">Condition: {{ item.itemCondition}}</figcaption>
             </div>
             <!--editable fields-->
