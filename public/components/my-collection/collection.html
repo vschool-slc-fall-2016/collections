@@ -1,11 +1,47 @@
 <div class="row myCollections">
-    <div ng-repeat="item in myItems" class="col-xs-4 col-md-4 text-center">
+    <div ng-repeat="item in myItems track by $index" class="col-xs-4 col-md-4 text-center">
         <figure>
-            <img src="{{ item.itemImageUrl }}" alt="..." class="img1 img-circle">
-            <figcaption class="my-coll first-fig">Name: {{ item.itemName }}</figcaption>
-            <figcaption class="my-coll">Value: {{ item.itemValue }}</figcaption>
-            <figcaption class="my-coll">Condition: {{ item.itemCondition}}</figcaption>
-            <figcaption class="my-coll">Collection: {{ item.itemCollection}}</figcaption>
+            <img ng-src="{{ item.itemImageUrl }}" alt="..." class="img1 img-circle">
+
+            <!--default text shown on page load-->
+
+            <div ng-if="!showEditableFields">
+                <figcaption class="my-coll first-fig">Name: {{ item.itemName }}</figcaption>
+                <figcaption class="my-coll">Value: {{ item.itemValue }}</figcaption>
+                <figcaption class="my-coll">Condition: {{ item.itemCondition}}</figcaption>
+            </div>
+            <!--editable fields-->
+
+            <form  class="form-horizontal" ng-if="showEditableFields">
+                <div class="form-group first-edit">
+                    <label for="editName">Name: </label>
+                    <input class="form-control name-margin" id="editName" placeholder="{{item.itemName}}"
+                           ng-model="myItems[$index].itemName">
+                </div>
+                <div class="form-group">
+                    <label for="editValue">Value: </label>
+                    <input class="form-control value-margin" id="editValue" placeholder="{{item.itemValue}}"
+                           ng-model="myItems[$index].itemValue">
+                </div>
+                <div class="form-group">
+                    <label for="editCondition">Condition: </label>
+                    <input class="form-control" id="editCondition" placeholder="{{item.itemCondition}}"
+                           ng-model="myItems[$index].itemCondition">
+                </div>
+            </form>
+
+            <button ng-show="!showEditableFields" ng-click="showEditableFields = !showEditableFields"
+                    class="btn btn-default">Edit
+            </button>
+            <button ng-show="showEditableFields" ng-click="updateItem($index, myItems[$index]); showEditableFields = !showEditableFields"
+                    class="btn btn-default">Save
+            </button>
+            <button ng-show="showEditableFields" ng-click="showEditableFields = !showEditableFields" class="btn btn-danger">Discard Changes</button>
+            <button ng-show="!showEditableFields" ng-click="deleteItem(myItems[$index])" class="btn btn-danger">Delete</button>
         </figure>
     </div>
 </div>
+
+
+<div class="row my-container"></div>
+

@@ -18,6 +18,10 @@
     margin-top: 15px;
 }
 
+.first-edit {
+    margin-top: 10px;
+}
+
 .my-coll {
     font-weight: bold;
     font-size: 20px;
@@ -25,4 +29,27 @@
 
 .center-block {
     margin-bottom: 100px !important;
+}
+
+.my-container {
+    height: 100px;
+}
+
+.form-control {
+    display: inline;
+    width: 40%;
+    height: 25px;
+
+}
+
+figure {
+    height: 490px;
+}
+
+.name-margin {
+    margin-right: -25px;
+}
+
+.value-margin {
+    margin-right: -28px;
 }
