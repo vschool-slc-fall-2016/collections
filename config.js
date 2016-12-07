@@ -1,4 +1,4 @@
 module.exports = {
     secret: "house nail temple cross",
-    database : 'mongodb://localhost/collections'
+    database :process.env.MONGODB_URI || 'mongodb://localhost/collections'
 };
