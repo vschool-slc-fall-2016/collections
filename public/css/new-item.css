@@ -1,8 +1,23 @@
 .form-control {
     width: 180px;
-    margin-left: 40%;
+}
+
+.center-block {
+    width: 100px;
 }
 
 h1 {
     text-align: center;
+}
+
+#collection {
+    margin-right: 30px;
+}
+
+#condition {
+    margin-right: 30px;
+}
+
+#title {
+    margin-right: -8px;
 }
