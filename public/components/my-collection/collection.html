@@ -3,7 +3,7 @@
         <figure>
             <img src="{{ item.itemImageUrl }}" alt="..." class="img1 img-circle">
             <figcaption class="my-coll first-fig">Name: {{ item.itemName }}</figcaption>
-            <figcaption class="my-coll">Value: {{ item.itemValue }}</figcaption>
+            <figcaption class="my-coll">Value: {{ item.itemValue | currency }}</figcaption>
             <figcaption class="my-coll">Condition: {{ item.itemCondition}}</figcaption>
             <figcaption class="my-coll">Collection: {{ item.itemCollection}}</figcaption>
         </figure>
