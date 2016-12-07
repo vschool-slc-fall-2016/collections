@@ -4,7 +4,7 @@
             <img class="my-img" src="{{item.itemImageUrl}}">
             <figcaption class="my-fig first-fig">Item Name: {{item.itemName}}</figcaption>
             <figcaption class="my-fig">Item Condition: {{item.itemCondition}}</figcaption>
-            <figcaption class="my-fig">Estimated Value: {{item.itemValue}}</figcaption>
+            <figcaption class="my-fig">Estimated Value: {{item.itemValue | currency}}</figcaption>
 
         </figure>
     </div>
