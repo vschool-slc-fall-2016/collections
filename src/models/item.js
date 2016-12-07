@@ -9,7 +9,7 @@ var itemSchema = new mongoose.Schema({
         required: true
     },
     itemName: String,
-    itemValue: String,
+    itemValue: Number,
     itemCondition: String,
     itemCollection: String,
     itemImageUrl: String
